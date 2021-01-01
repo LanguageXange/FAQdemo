@@ -3,7 +3,6 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
   display: grid;
   grid-column: 4/11;
-  row-gap: 20px;
 
   h3 {
     margin: 0;
@@ -26,19 +25,20 @@ export const Accordion = styled.div`
   padding: 20px;
   border-bottom: 3px solid #37475a;
   border-radius: 10px 10px 30px 10px;
+  height: min-content;
   ${activeStyling}
 `;
 
 export const FaQAnswerContainer = styled.section`
-  margin-top: 5px;
   overflow: hidden;
   max-height: 0;
   opacity: 0;
   user-select: none;
-  transition: all 0.4s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   &.active {
     max-height: max-content;
     opacity: 1;
+    margin-top: 10px;
   }
 `;
 
@@ -46,7 +46,7 @@ export const FaqHeader = styled.div`
   display: flex;
   flex-wrap: wrap;
   position: relative;
-
+  text-align: left;
   span {
     position: absolute;
     top: 0px;
@@ -78,4 +78,6 @@ export const FaqDesc = styled.div`
   margin: 0px;
   margin-right: 105px;
   font-size: 15px;
+
+  line-height: 18px;
 `;

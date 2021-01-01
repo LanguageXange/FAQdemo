@@ -5,8 +5,7 @@ const NavBar = () => {
   return (
     <NavBarContainer>
       {" "}
-      <AiFillAmazonCircle />
-      NAV BAR
+      <AiFillAmazonCircle />I AM NAV BAR
     </NavBarContainer>
   );
 };

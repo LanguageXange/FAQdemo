@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavBarContainer = styled.div`
-  border: 3px solid black;
+  border-bottom: 3px solid black;
   height: 80px;
   text-align: center;
   line-height: 80px;
